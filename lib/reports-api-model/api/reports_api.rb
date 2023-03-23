@@ -38,7 +38,7 @@ module AmzSpApi::ReportsApiModel
         fail ArgumentError, "Missing the required parameter 'report_id' when calling ReportsApi.cancel_report"
       end
       # resource path
-      local_var_path = '/reports/2020-09-04/reports/{reportId}'.sub('{' + 'reportId' + '}', report_id.to_s)
+      local_var_path = "/reports/#{api_client.config.api_version}/reports/{reportId}".sub('{' + 'reportId' + '}', report_id.to_s)
 
       # query parameters
       query_params = opts[:query_params] || {}
@@ -92,7 +92,7 @@ module AmzSpApi::ReportsApiModel
         fail ArgumentError, "Missing the required parameter 'report_schedule_id' when calling ReportsApi.cancel_report_schedule"
       end
       # resource path
-      local_var_path = '/reports/2020-09-04/schedules/{reportScheduleId}'.sub('{' + 'reportScheduleId' + '}', report_schedule_id.to_s)
+      local_var_path = "/reports/#{api_client.config.api_version}/schedules/{reportScheduleId}".sub('{' + 'reportScheduleId' + '}', report_schedule_id.to_s)
 
       # query parameters
       query_params = opts[:query_params] || {}
@@ -146,7 +146,7 @@ module AmzSpApi::ReportsApiModel
         fail ArgumentError, "Missing the required parameter 'body' when calling ReportsApi.create_report"
       end
       # resource path
-      local_var_path = '/reports/2020-09-04/reports'
+      local_var_path = "/reports/#{api_client.config.api_version}/reports"
 
       # query parameters
       query_params = opts[:query_params] || {}
@@ -202,7 +202,7 @@ module AmzSpApi::ReportsApiModel
         fail ArgumentError, "Missing the required parameter 'body' when calling ReportsApi.create_report_schedule"
       end
       # resource path
-      local_var_path = '/reports/2020-09-04/schedules'
+      local_var_path = "/reports/#{api_client.config.api_version}/schedules"
 
       # query parameters
       query_params = opts[:query_params] || {}
@@ -258,7 +258,7 @@ module AmzSpApi::ReportsApiModel
         fail ArgumentError, "Missing the required parameter 'report_id' when calling ReportsApi.get_report"
       end
       # resource path
-      local_var_path = '/reports/2020-09-04/reports/{reportId}'.sub('{' + 'reportId' + '}', report_id.to_s)
+      local_var_path = "/reports/#{api_client.config.api_version}/reports/{reportId}".sub('{' + 'reportId' + '}', report_id.to_s)
 
       # query parameters
       query_params = opts[:query_params] || {}
@@ -312,7 +312,7 @@ module AmzSpApi::ReportsApiModel
         fail ArgumentError, "Missing the required parameter 'report_document_id' when calling ReportsApi.get_report_document"
       end
       # resource path
-      local_var_path = '/reports/2020-09-04/documents/{reportDocumentId}'.sub('{' + 'reportDocumentId' + '}', report_document_id.to_s)
+      local_var_path = "/reports/#{api_client.config.api_version}/documents/{reportDocumentId}".sub('{' + 'reportDocumentId' + '}', report_document_id.to_s)
 
       # query parameters
       query_params = opts[:query_params] || {}
@@ -366,7 +366,7 @@ module AmzSpApi::ReportsApiModel
         fail ArgumentError, "Missing the required parameter 'report_schedule_id' when calling ReportsApi.get_report_schedule"
       end
       # resource path
-      local_var_path = '/reports/2020-09-04/schedules/{reportScheduleId}'.sub('{' + 'reportScheduleId' + '}', report_schedule_id.to_s)
+      local_var_path = "/reports/#{api_client.config.api_version}/schedules/{reportScheduleId}".sub('{' + 'reportScheduleId' + '}', report_schedule_id.to_s)
 
       # query parameters
       query_params = opts[:query_params] || {}
@@ -420,7 +420,7 @@ module AmzSpApi::ReportsApiModel
         fail ArgumentError, "Missing the required parameter 'report_types' when calling ReportsApi.get_report_schedules"
       end
       # resource path
-      local_var_path = '/reports/2020-09-04/schedules'
+      local_var_path = "/reports/#{api_client.config.api_version}/schedules"
 
       # query parameters
       query_params = opts[:query_params] || {}
@@ -486,7 +486,7 @@ module AmzSpApi::ReportsApiModel
         fail ArgumentError, 'invalid value for "processing_statuses", must include one of CANCELLED, DONE, FATAL, IN_PROGRESS, IN_QUEUE'
       end
       # resource path
-      local_var_path = '/reports/2020-09-04/reports'
+      local_var_path = "/reports/#{api_client.config.api_version}/reports"
 
       # query parameters
       query_params = opts[:query_params] || {}
