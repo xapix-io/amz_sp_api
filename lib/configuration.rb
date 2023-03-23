@@ -36,6 +36,15 @@ module AmzSpApi
     #   config.api_key_prefix['api_key'] = 'Token'
     attr_accessor :api_key_prefix
 
+    # Defines the version of the Reports API
+    # !! This is currently only used on the Reports API !!
+    #
+    # @return [String]
+    #
+    # @example version is "2020-09-04"
+    #   config.api_version = '2020-09-04'
+    attr_accessor :api_version
+
     # Defines the username used with HTTP basic authentication.
     #
     # @return [String]
@@ -130,6 +139,7 @@ module AmzSpApi
       @base_path = 'https://sellingpartnerapi-na.amazon.com/'
       @api_key = {}
       @api_key_prefix = {}
+      @api_version = ''
       @timeout = 0
       @client_side_validation = true
       @verify_ssl = true
